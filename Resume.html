@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <link rel="stylesheet" href="data:text/css,body{font-family:font-family:Arial;;line-height:1.4;background-color:pink;color:brown;margin:0;padding:20px;}header{background-color:#007BFF;color:white;padding:20px;text-align:center;}">
+
+    <style>
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #e1addf;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        section {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2f2e2e;
+            padding-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+      
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        code {
+            background: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+        <img src="image2.jpeg" alt="My Profile Picture"
+         style="float:right;
+                width:130px;
+                height:130px;
+                border-radius:50%;
+                border:3px solid white;
+                margin-top:10px;
+                margin-right:20px;">
+        <h1>Resume</h1>
+        <nav>
+            <a href="#Education" style="color: #282d8e; margin-right: 15px;">Education</a>
+            <a href="#Hobbies" style="color: #282d8e; margin-right: 15px;">Hobbies</a>
+            <a href="#Projects" style="color: #282d8e; margin-right: 15px;">Projects</a>
+            <a href="#Skills" style="color: #282d8e;">Skills</a>
+            <a href="#form" style="color: #282d8e; margin-right: 15px;">Form</a>
+        </nav>
+    </header>
+        <main>
+        <section id="Education">
+            <h2>1. Education and Qualification</h2>
+            <p>I am a B.Tech CSE student with a strong foundation in computer science and programming.</p>
+            
+            <p>I am pursuing my Btech degree in <strong>KL University</strong> Vijayawada, where I am gaining knowledge in various programming languages and software development methodologies.</p>
+            
+            <h3>HSC Qualifications</h3>
+            <p>I had done 11th and 12th from <strong>B.D College</strong>, Patna.</p>
+            <p>My main HSC subjects were Physics, Chemistry, and Mathematics.</p>
+            <p>My percentage in HSC was 75%.</p>
+        </section>
+
+        <section id="Hobbies">
+            <h2>2. Hobbies and Interests</h2>
+            <p>The table shows my <strong>Hobbies</strong> and <strong>Interests.</strong></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hobbies</th>
+                        <th>Interests</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Playing Badminton</td>
+                        <td>Problem Solving</td>
+                    </tr>
+                    <tr>
+                        <td>Listening to Music</td>
+                        <td>Cyber Security</td>
+                    </tr>
+                    <tr>
+                        <td>Reading Books</td>
+                        <td>Analyse Data</td>
+                    </tr>
+                     <tr>
+                        <td>Solving programming problems</td>
+                        <td>Watching Trending Content</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="Projects">
+            <h2>3. My Projects</h2>
+            <p> This sections contains all my projects which i made in 1styear of B.Tech></p>
+            
+            <div style="display: flex; gap: 40px;">
+                
+                <div>
+                    <h4>Ordered List</h4>
+                    <ol>
+                        <li>Smart Finance Manager & Personal Expense Intelligence System (SFM-PEIS) – Python-based personal finance management application.</li>
+                        <li>Warehouse & Inventory Handling System – C-based inventory management project.</li>
+                        <li>Student Records Indexing using AVL Tree – Data Structures project using AVL Trees for efficient record management</li>
+                        <li>Smart Energy Saving & Manual Override System – Arduino-based IoT project for energy management.</li>
+                        <li>Cyber Safety & Security Awareness Project – Research and awareness project including surveys, case studies, and reports.</li>
+                    </ol>
+                </div>
+            </div>
+
+            </section>
+
+        <section id="skills">
+            <h2>4. Skills</h2>
+            <p>Here are some of my key skills:</p>
+            <ul>
+                <li>Python Programming</li>
+                <li>C Programming</li>
+                <li>Arduino IoT Development</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Cyber Security</li>
+            </ul>
+        </section>
+
+        <section id="form">
+    <h2>5. Login Form</h2>
+    <p>Please enter your username and password.</p>
+
+    <form onsubmit="event.preventDefault(); alert('Successfully submitted');">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"
+               placeholder="Enter your username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"
+               placeholder="Enter your password" required>
+
+        <button type="submit"
+            style="background-color:#28a745;
+                   color:white;
+                   border:none;
+                   padding:12px 20px;
+                   font-size:16px;
+                   border-radius:4px;
+                   cursor:pointer;
+                   width:100%;">
+            Submit
+        </button>
+
+    </form>
+</section>
+    </main>
+
+    <!-- FOOTER TAG -->
+    <footer style="text-align: center; margin-top: 40px; color: #777; font-size: 14px;">
+        <p>&copy; 2026 My Resume. </p>
+    </footer>
+
+</body>
+</html>
